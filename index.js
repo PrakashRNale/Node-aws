@@ -14,6 +14,10 @@ app.get('/users', (req, res) =>{
     return res.json(users);
 })
 
+app.get('/items', (req, res) =>{
+    return res.json("There are n number of items");
+})
+
 app.get('/jyoti',(req, res) =>{
     return res.json("Jyoti is item girl")
 })
