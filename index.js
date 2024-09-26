@@ -19,7 +19,8 @@ app.get("/", (req,res,next) =>{
 })
 
 app.get('/users', (req, res) =>{
-    return res.json(users);
+
+    return res.json(users.slice(0,10));
 })
 
 app.get('/items', (req, res) =>{
